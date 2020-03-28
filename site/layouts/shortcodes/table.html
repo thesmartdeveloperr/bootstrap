@@ -1,9 +1,9 @@
 {{- /*
-Usage: `table [args]`
+  Usage: `table [args]`
 
-`args` are optional and can be one of the following:
-class: any class(es) to be added to the `table` - default ""
-simplified: show a simplified version in the examples - default `true`
+  `args` are optional and can be one of the following:
+  class: any class(es) to be added to the `table` - default ""
+  simplified: show a simplified version in the examples - default `true`
 */ -}}
 
 {{- $simplified := .Get "simplified" | default true -}}
@@ -23,7 +23,7 @@ simplified: show a simplified version in the examples - default `true`
 
 <div class="bd-example">
   <table{{ with .Get "class" }} class="{{ . }}"{{ end }}>
-  {{ partialCached "table-content" . }}
+    {{ partialCached "table-content" . }}
   </table>
 </div>
 
