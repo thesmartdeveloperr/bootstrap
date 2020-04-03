@@ -4,7 +4,7 @@
 
 .btn {
   display: inline-block;
-  font-family: $btn-font-family;
+  font-family: if($btn-font-family != null, var(--btn-font-family), null);
   font-weight: $btn-font-weight;
   line-height: $btn-line-height;
   color: $body-color;

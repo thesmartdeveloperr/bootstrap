@@ -12,4 +12,25 @@
   // See https://github.com/sass/sass/issues/2383#issuecomment-336349172
   --font-family-sans-serif: #{inspect($font-family-sans-serif)};
   --font-family-monospace: #{inspect($font-family-monospace)};
+  --font-family-base: var(--font-family-sans-serif);
+
+  @if $headings-font-family != null {
+    --headings-font-family: #{inspect($headings-font-family)};
+  }
+
+  @if $btn-font-family != null {
+    --btn-font-family: #{inspect($btn-font-family)};
+  }
+
+  @if $input-font-family != null {
+    --input-font-family: #{inspect($input-font-family)};
+  }
+
+  @if $form-select-font-family != null {
+    --form-select-font-family: #{inspect($form-select-font-family)};
+  }
+
+  @if $form-file-font-family != null {
+    --form-file-font-family: #{inspect($form-file-font-family)};
+  }
 }

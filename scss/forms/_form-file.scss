@@ -43,7 +43,7 @@
   flex-grow: 1;
   padding: $form-file-padding-y $form-file-padding-x;
   overflow: hidden;
-  font-family: $form-file-font-family;
+  font-family: if($form-file-font-family != null, var(--form-file-font-family), null);
   font-weight: $form-file-font-weight;
   line-height: $form-file-line-height;
   color: $form-file-color;
