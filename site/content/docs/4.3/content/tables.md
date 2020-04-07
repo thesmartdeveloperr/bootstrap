@@ -14,6 +14,10 @@ Using the most basic table markup, here's how `.table`-based tables look in Boot
 
 {{< table class="table" simplified="false" >}}
 
+## How it works
+
+{{< scss-docs name="table-custom-properties" file="scss/_tables.scss" >}}
+
 ## Options
 
 ### Inverted

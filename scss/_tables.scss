@@ -3,6 +3,7 @@
 //
 
 .table {
+  // scss-docs-start table-custom-properties
   --table-bg: #{$table-bg};
   --table-accent-bg: transparent;
   --table-striped-color: #{$table-striped-color};
@@ -11,6 +12,7 @@
   --table-active-bg: #{$table-active-bg};
   --table-hover-color: #{$table-hover-color};
   --table-hover-bg: #{$table-hover-bg};
+  // scss-docs-end table-custom-properties
 
   width: 100%;
   margin-bottom: $spacer;
