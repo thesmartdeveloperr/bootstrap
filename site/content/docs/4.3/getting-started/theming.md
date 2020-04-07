@@ -299,7 +299,7 @@ Our `tint-color()` and `shade-color()` functions use `mix()` alongside our `$the
   {{- range $color := $.Site.Data.colors }}
     {{- if (and (not (eq $color.name "white")) (not (eq $color.name "gray")) (not (eq $color.name "gray-dark"))) }}
     <div class="col-md-4 mb-3 font-monospace">
-      <div class="p-3 mb-2 swatch-{{ $color.name }}">
+      <div class="p-3 mb-2 position-relative swatch-{{ $color.name }}">
         <strong class="d-block">${{ $color.name }}</strong>
         {{ $color.hex }}
       </div>
